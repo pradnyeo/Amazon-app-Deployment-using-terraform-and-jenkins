@@ -49,7 +49,7 @@ pipeline{
         }
         stage("TRIVY"){
             steps{
-                sh "trivy image aakibkhan1212/amazon-clone:latest > trivyimage.txt" 
+                sh "trivy image pradnyeo/amazon-clone:latest > trivyimage.txt" 
             }
         }
         stage('Deploy to container'){
